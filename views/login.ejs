@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <center>
+            <h1>Login Page</h1>
+
+            <h4 style="color: red"><%= message %></h4>
+            <form action="/login" method="post">
+                <label for="username"> Username </label>
+                <br />
+                <input
+                    id="username"
+                    name="username"
+                    type="username"
+                    placeholder="Input your username"
+                />
+                <br />
+                <br />
+                <label for="password">Password</label>
+                <br />
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Input password"
+                />
+                <br />
+                <br />
+                <button type="submit">Login</button>
+            </form>
+            <br />
+            <a href="/register">Register</a>
+        </center>
+    </body>
+</html>
